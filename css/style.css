@@ -27,6 +27,13 @@
 .mt-20{
     margin-top: 20px;
 }
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
 
 .mt-30{
     margin-top: 30px;
@@ -36,8 +43,16 @@
     margin-top: 50px;
 }
 
+.mt-80{
+    margin-top: 80px;
+}
+
 .px10{
     padding: 0 10px;
+}
+
+.flex{
+    display: flex;
 }
 a{
     text-decoration: none;
@@ -136,8 +151,8 @@ main{
     padding: 8px;
 }
 .bottom-sidebar{
-position: absolute;
-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
 }
 
 .bottom-sidebar i:first-child{
@@ -152,6 +167,66 @@ bottom: 10px;
 .bottom-sidebar p:nth-child(2){
     font-weight: 600;
 }
+
+/********** discovery **********/
+.discovery ul{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.discovery ul li:first-child{
+    border-bottom: 1px solid var(--color-highlight);
+}
+
+/********** SECTION recently **********/
+.card-wrapper{
+    display: flex;
+    gap: 20px;
+}
+
+.card{
+    width: calc(100% / 6 - 20px);
+}
+
+.text-card{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.text-card h6{
+    padding-top: 5px;
+    font-weight: 400;
+}
+
+.img-card{
+    position: relative;
+}
+
+#play{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-size: 3em;
+    display: none;
+}
+
+/********** SECTION created **********/
+.subtitle{
+    font-weight: 400;
+    margin-top: -10px;
+    color: grey;
+}
+
+/********** SECTION popular-artist **********/
+#popular-artist .img-card{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
 /*************************************************
     PLAYBAR
  *************************************************/
