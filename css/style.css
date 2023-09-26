@@ -36,6 +36,9 @@
     margin-top: 50px;
 }
 
+.px10{
+    padding: 0 10px;
+}
 a{
     text-decoration: none;
     color: white;
@@ -152,12 +155,77 @@ bottom: 10px;
 /*************************************************
     PLAYBAR
  *************************************************/
-
-
  .playbar{
     position: fixed;
     z-index: 1000;
     background-color: var(--color-dark-grey);
     height: 80px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pb-left, .pb-right{
+    padding:10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 25%;
+}
+
+.pb-middle{
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+}
+/****** pb-left******/
+.playbar .box-image{
+    width: 50px;
+}
+
+.pb-icon{
+    margin-left: 20px;
+}
+
+.pb-left h6{
+    font-weight: 400;
+    padding-top: 5px;
+}
+/****** pb-middle******/
+
+.icon-top i{
+    font-size: 1.2em;
+    padding: 5px 10px;    
+}
+.fa-regular.fa-circle-play{
+    font-size: 1.7em;
+}
+
+.barra{
+    display: inline-block;
+    width: 50%;
+    border: 2px solid var(--color-light-grey);
+}
+
+.bar-time span{
+    padding: 0 10px;
+    font-size: 0.8em;  
+}
+
+/****** pb-right******/
+.pb-right{
+    position: relative;
+}
+.pb-right .barra{
+    width: 100px;
+    vertical-align: middle;
+}
+
+.pb-right-wrapper{
+    position: absolute;
+    right: 10px;
+}
+
+.pb-right i{
+    padding: 0 5px;
 }
