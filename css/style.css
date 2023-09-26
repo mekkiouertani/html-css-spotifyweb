@@ -21,6 +21,11 @@
     border: 1px solid red;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -40,15 +45,16 @@ main{
 }
 
 .sidebar{
-    background-color: blue;
+    background-color: var(--color-black);
     height: 100%;
     width: 250px;
 }
 
 .wrapper{
-    background-color: purple;
+    background-color: var(--color-dark-color);
     height: 100%;
-    width: calc(100% - 250px)
+    width: calc(100% - 250px);
+    overflow-y: auto;
 }
 
 .call-to-action{
@@ -56,10 +62,23 @@ main{
     z-index: 900;
     width: calc(100% - 250px);
     height: 100px;
-    background-color: rgba(60, 60, 60, 0.5)
+    background-color: rgba(60, 60, 60, 0.2);
 }
 
+.call-to-action a{
+    position: absolute;
+    top: 25%;
+    left: 85%;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
 .discovery{
+    padding: 20px;
     margin-top: 100px;
 }
 
@@ -70,7 +89,7 @@ main{
 .playbar{
     position: fixed;
     z-index: 1000;
-    background-color: red;
+    background-color: var(--color-dark-grey);
     height: 80px;
     width: 100%;
 }
