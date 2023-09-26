@@ -25,3 +25,52 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
+
+.div-megawrapper{
+    height: 100vh;
+    width: 100%;
+}
+/*************************************************
+    MAIN 
+ *************************************************/
+main{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+}
+
+.sidebar{
+    background-color: blue;
+    height: 100%;
+    width: 250px;
+}
+
+.wrapper{
+    background-color: purple;
+    height: 100%;
+    width: calc(100% - 250px)
+}
+
+.call-to-action{
+    position: fixed;
+    z-index: 900;
+    width: calc(100% - 250px);
+    height: 100px;
+    background-color: rgba(60, 60, 60, 0.5)
+}
+
+.discovery{
+    margin-top: 100px;
+}
+
+
+/*************************************************
+    PLAYBAR
+ *************************************************/
+.playbar{
+    position: fixed;
+    z-index: 1000;
+    background-color: red;
+    height: 80px;
+    width: 100%;
+}
