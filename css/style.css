@@ -93,20 +93,19 @@ main{
     width: calc(100% - 250px);
     overflow-y: auto;
 }
-
+/****** call to action ******/
 .call-to-action{
     position: fixed;
     z-index: 900;
     width: calc(100% - 250px);
     height: 100px;
     background-color: rgba(60, 60, 60, 0.2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .call-to-action a{
-    position: absolute;
-    top: 25%;
-    left: 82%;
-    text-align: center;
     margin-right: 25px;
 }
 
@@ -120,7 +119,7 @@ main{
     margin-top: 100px;
 }
 /****** sidebar ******/
-.sidebar{
+.sidebar, .sidebar-small{
     background-color: var(--color-black);
     height: 100%;
     width: 250px;
@@ -129,11 +128,15 @@ main{
     position: relative;
 }
 
+.sidebar-small{
+    display: none;
+}
+
 .box-logo{
     width: 150px;
 }
 
-.sidebar li{
+.sidebar li, .sidebar-small li{
     padding: 10px 0px;
 }
 
@@ -168,10 +171,13 @@ main{
 .bottom-sidebar p:nth-child(2){
     font-weight: 600;
 }
-
+.pb-icon *{
+    margin-right: 10px;
+}
 /********** discovery **********/
 .discovery ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     margin-bottom: 50px;
@@ -259,6 +265,7 @@ main{
 /****** pb-left******/
 .playbar .box-image{
     width: 50px;
+    min-width: 50px;
 }
 
 .pb-icon{
@@ -320,10 +327,7 @@ main{
     .discovery ul{
         font-size: 0.9em;
     }
-    .call-to-action a{
-        font-size: 0.8em;
-        margin-right:3rem;
-    }
+
     .btn{
         padding: 10px 10px;
     }
@@ -337,17 +341,75 @@ main{
         font-size: 0.8em;
         text-align: center;
     }
-    .call-to-action a{
-        font-size: 0.7em;
-        margin-right:3rem;
-    }
+
     .pb-left, .pb-right, .pb-middle{
         width: 100%;
     }
-
-
  }
 
- @media screen and (max-width: 576px) {
+ @media screen and (max-width: 768px) {
+    .card{
+        width: calc(100% / 2 - 20px);
+    }
+
+    .pb-right{
+        width: 20%;
+    }
+    .pb-left{
+        width: 30%;
+    }
+    .pb-middle{
+        width: 50%;
+    }
+    .pb-right .barra{
+        wid
+    }
     
+ }
+
+ @media screen and (max-width: 575px) {
+    .sidebar{
+        display: none;
+    }
+
+    .sidebar-small{
+        display: block;
+        padding: 5px;
+        width: 50px;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+
+    }
+    .sidebar-small .box-logo{
+        width: 40px;
+        
+    }
+    .wrapper, .call-to-action{
+        width:calc(100% - 50px)
+    }
+    .sidebar-small i, .sidebar-small .bottom-sidebar i{
+        font-size: 2.1em;
+        margin-left: 2px;
+        
+    }
+
+    .discovery ul{
+        font-size: 1em;
+        gap: 30px;
+    }
+
+    .bottom-sidebar p:first-child{
+        display: inline-block;
+        padding: 5px ;
+        font-size: 0.5em;
+        border-bottom: 0px;
+        border-radius: 50%;
+        text-align: center;
+        margin-left: 4px;
+    
+    }
+
  }
