@@ -1,0 +1,27 @@
+/*************************************************
+    MAIN UTILITIES
+ *************************************************/
+ :root {
+	--color-dark-color: #141922;
+	--color-dark-grey: #282828;
+	--color-black: #000000;
+	--color-white: #ffffff;
+	--color-grey: #717171;
+	--color-light-grey: #c1c1c1;
+	--color-highlight: #adff2f;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
