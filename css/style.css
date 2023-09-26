@@ -334,10 +334,16 @@ main{
         width: calc(100% / 3 - 20px);
     }
     .discovery ul{
-        font-size: 0.9em;
+        font-size: 0.8em;
         text-align: center;
     }
-
+    .call-to-action a{
+        font-size: 0.7em;
+        margin-right:3rem;
+    }
+    .pb-left, .pb-right, .pb-middle{
+        width: 100%;
+    }
 
 
  }
