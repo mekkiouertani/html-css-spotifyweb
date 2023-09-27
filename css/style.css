@@ -218,7 +218,7 @@ main{
 /*************************************************
    DISCOVERY
  *************************************************/
-.discovery ul{
+.discovery ul, .discovery-fixed{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -228,6 +228,10 @@ main{
 
 .discovery ul li:first-child{
     border-bottom: 1px solid var(--color-highlight);
+}
+
+.discovery-fixed{
+    display: none;
 }
 
 /********** SECTION recently **********/
@@ -383,7 +387,31 @@ input[type="range"] {
         max-height: 30vh;
     }
     
-}
+    .call-to-action{
+        display: none;
+    }
+
+    div .discovery{
+        margin-top: 5px;      
+    } 
+
+       /* .discovery .menu{
+        position: fixed;
+        z-index: 1000;
+        margin: 0 60px;
+    }
+
+    .menu li{
+        background-color: black;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #recently{
+        margin-top: 20%;
+    }  */
+} 
+
+
  @media screen and (max-width: 1200px) {
     .card{
         width: calc(100% / 4 - 20px);
