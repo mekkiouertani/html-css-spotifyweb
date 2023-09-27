@@ -140,7 +140,10 @@ main{
     width: 250px;
     padding: 20px;
     font-weight: 300;
-    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .sidebar-small{
@@ -173,10 +176,6 @@ main{
     background-color: var(--color-grey);
     padding: 8px;
 }
-.bottom-sidebar{
-    position: absolute;
-    bottom: 10px;
-}
 
 .bottom-sidebar i:first-child{
     font-size: 0.9em;
@@ -197,7 +196,9 @@ main{
 .playlist-scrollbar{
     overflow-y: scroll;
 }
-/********** discovery **********/
+/*************************************************
+   DISCOVERY
+ *************************************************/
 .discovery ul{
     display: flex;
     flex-wrap: wrap;
