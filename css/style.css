@@ -264,20 +264,21 @@ main{
     position: relative;
 }
 
-#play{
+.play{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5em;
     display: none;
     border-radius: 50%;
     padding: 10px;
     background-color: rgba(60, 60, 60, 0.5);
-
+}
+.play.fa-regular.fa-circle-play{
+    font-size: 5em;
 }
 
-.card:hover #play{
+.card:hover .play{
     display: inline-block;
 }
 
