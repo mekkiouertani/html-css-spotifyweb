@@ -215,6 +215,14 @@ main{
     vertical-align: middle;
     margin-right: 4px;
 }
+
+.sidebar a{
+    color: var(--color-light-grey);
+}
+.sidebar a:hover{
+    color: white;
+    font-weight: 600;
+}
 /*************************************************
    DISCOVERY
  *************************************************/
@@ -234,6 +242,14 @@ main{
     display: none;
 }
 
+.menu a{
+    color: var(--color-grey)
+}
+
+.menu a:hover{
+    color: white;
+}
+
 /********** SECTION recently **********/
 .card-wrapper{
     display: flex;
@@ -249,6 +265,7 @@ main{
     width: calc(100% / 6 - 20px);
 }
 
+
 .text-card{
     padding-top: 10px;
     text-align: center;
@@ -258,6 +275,8 @@ main{
 .text-card h6{
     padding-top: 5px;
     font-weight: 400;
+    color: var(--color-grey);
+    font-weight: 500;
 }
 
 .img-card{
@@ -340,7 +359,16 @@ main{
     font-weight: 400;
     padding-top: 5px;
 }
+
+.pb-icon .fa-regular.fa-heart:hover{
+    color: var(--color-highlight);
+}
 /****** pb-middle******/
+
+.icon-top{
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
 
 .icon-top i{
     font-size: 1.2em;
