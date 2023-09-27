@@ -346,6 +346,7 @@ main{
     border: 2px solid var(--color-light-grey);
 }
 
+
 .bar-time span{
     padding: 0 10px;
     font-size: 0.8em;  
@@ -360,6 +361,11 @@ main{
     vertical-align: middle;
 }
 
+input[type="range"] {
+    accent-color: white;
+    vertical-align: middle;
+  }
+
 .pb-right-wrapper{
     position: absolute;
     right: 10px;
@@ -372,7 +378,12 @@ main{
 /*************************************************
    MEDIA QUERY
  *************************************************/
-
+@media screen and (max-height: 800px){
+    .playlist-scrollbar{
+        max-height: 30vh;
+    }
+    
+}
  @media screen and (max-width: 1200px) {
     .card{
         width: calc(100% / 4 - 20px);
@@ -399,6 +410,11 @@ main{
     .pb-left, .pb-right, .pb-middle{
         width: 100%;
     }
+    .song-info{
+        width: 100%;
+    }
+
+  
  }
 
  @media screen and (max-width: 768px) {
@@ -418,6 +434,7 @@ main{
     .pb-right .barra{
         wid
     }
+    
     
  }
 
@@ -465,5 +482,8 @@ main{
         margin-left: 4px;
     
     }
+    
+ 
+ 
 
  }
