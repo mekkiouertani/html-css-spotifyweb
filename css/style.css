@@ -45,6 +45,9 @@
 .mb-20{
     margin-bottom: 20px;
 }
+.mb-10{
+    margin-bottom: 10px;
+}
 
 .mb-30{
     margin-bottom: 30px;
@@ -133,7 +136,9 @@ main{
     padding: 20px;
     margin-top: 100px;
 }
-/****** sidebar ******/
+/********************
+    sidebar 
+            ***************/
 .sidebar, .sidebar-small{
     background-color: var(--color-black);
     height: 100%;
@@ -194,6 +199,7 @@ main{
 }
 
 .playlist-scrollbar{
+    max-height: 400px;
     overflow-y: scroll;
 }
 /*************************************************
