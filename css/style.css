@@ -267,14 +267,15 @@ main{
 #play{
     position: absolute;
     top: 35%;
-    left: 35%;
-    font-size: 3em;
+    left: 50%;
+    transform: translate(-35% -50%);
+    font-size: 4em;
     display: none;
 }
 
-/* .card:hover #play{
+.card:hover #play{
     display: inline-block;
-} */
+}
 
 .card:hover{
     background-color: rgba(100, 100, 100, 0.3);
