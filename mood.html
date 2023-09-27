@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.css">
-    <title>Spotify</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Spotify Mood and Genre</title>
 </head>
 
-<body>
+<body id="mood">
 <div class="mega-wrapper">
     <main>
         <!-- sidebar -->
@@ -226,7 +226,7 @@
             <div class="discovery">
                 <ul class="menu">
                     <li>
-                        <a href="#">
+                        <a href="./index.html">
                             IN EVIDENZA
                         </a>
                     </li>
@@ -241,7 +241,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./mood.html">
+                        <a href="#">
                             GENERI E MOOD
                         </a>
                     </li>
@@ -258,159 +258,270 @@
                 </ul>
                 <section id="recently">
                     <h2 class="mb-20">
-                        Ascolti Recenti
+                        Scegli il tuo stile, al resto ci pensiamo noi!
                     </h2>
                     <div class="card-wrapper">
                         <!-- card 1 -->
-                        <div class="card">
+                        <div class="card bgc-red">
                             <a href="#">
+                                <h5 class="text-card">Podcast</h5>
                                 <div class="img-card">
-                                    <img src="img/metal_lifting.jpg" alt="cover-art metal">
-                                    <i class="play fa-regular fa-circle-play"></i>
-                                </div>
-                                <div class="text-card">
-                                    <h5>Heavy Metal</h5>
-                                    <h6>Subtitle</h6>
+                                    <img src="img/mood-1.png" alt="cover-art metal">
                                 </div>
                             </a>
                         </div>
-                        <!-- card 2 -->
-                        <div class="card">
+                        <div class="card bgc-yellow">
                             <a href="#">
+                                <h5 class="text-card">Podcast</h5>
                                 <div class="img-card">
-                                    <img src="img/stranger.jpeg" alt="cover-art metal">
-                                    <i class="play fa-regular fa-circle-play"></i>
-                                </div>
-                                <div class="text-card">
-                                    <h5>Mix N.1 Anthem Series</h5>
-                                    <h6>Stranger Things</h6>
+                                    <img src="img/player_left.jpg" alt="cover-art metal">
                                 </div>
                             </a>
                         </div>
-                        <!-- card 3 -->
-                        <div class="card">
+                        <div class="card bgc-purple">
                             <a href="#">
-                                <div class="img-card">
-                                    <img src="img/aquietplace.jpeg" alt="cover-art metal">
-                                    <i class="play fa-regular fa-circle-play"></i>
-                                </div>
-                                <div class="text-card">
-                                    <h5>Marco Beltrame</h5>
-                                    <h6>A quiet place</h6>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- card 4 -->
-                        <div class="card">
-                            <a href="#">
-                                <div class="img-card">
-                                    <img src="img/split.jpeg" alt="cover-art metal">
-                                    <i class="play fa-regular fa-circle-play"></i>
-                                </div>
-                                <div class="text-card">
-                                    <h5>West Thordson</h5>
-                                    <h6>Split</h6>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- card 5 -->
-                        <div class="card">
-                            <a href="#">
-                                <div class="img-card">
-                                    <img src="img/cure.jpeg" alt="cover-art metal">
-                                    <i class="play fa-regular fa-circle-play"></i>
-                                </div>
-                                <div class="text-card">
-                                    <h5>Ben Fish</h5>
-                                    <h6>A cure for wellness</h6>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- card 6 -->
-                        <div class="card">
-                            <a href="#">
+                                <h5 class="text-card">Daily Mix</h5>
                                 <div class="img-card">
                                     <img src="img/sinister.jpeg" alt="cover-art metal">
-                                    <i class="play fa-regular fa-circle-play"></i>
-                                </div>
-                                <div class="text-card">
-                                    <h5>Christopher Young</h5>
-                                    <h6>Sinister</h6>
                                 </div>
                             </a>
                         </div>
+                        <div class="card bgc-pink">
+                            <a href="#">
+                                <h5 class="text-card">Pop</h5>
+                                <div class="img-card">
+                                    <img src="img/metal_lifting.jpg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-blue">
+                            <a href="#">
+                                <h5 class="text-card">Blues</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-coral">
+                            <a href="#">
+                                <h5 class="text-card">Rock</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-pink">
+                            <a href="#">
+                                <h5 class="text-card">Dance</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-purple">
+                            <a href="#">
+                                <h5 class="text-card">Daily Mix</h5>
+                                <div class="img-card">
+                                    <img src="img/sinister.jpeg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-pink">
+                            <a href="#">
+                                <h5 class="text-card">Pop</h5>
+                                <div class="img-card">
+                                    <img src="img/metal_lifting.jpg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-blue">
+                            <a href="#">
+                                <h5 class="text-card">Blues</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-coral">
+                            <a href="#">
+                                <h5 class="text-card">Rock</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-pink">
+                            <a href="#">
+                                <h5 class="text-card">Dance</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-red">
+                            <a href="#">
+                                <h5 class="text-card">Podcast</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-yellow">
+                            <a href="#">
+                                <h5 class="text-card">Podcast</h5>
+                                <div class="img-card">
+                                    <img src="img/player_left.jpg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-purple">
+                            <a href="#">
+                                <h5 class="text-card">Daily Mix</h5>
+                                <div class="img-card">
+                                    <img src="img/sinister.jpeg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-pink">
+                            <a href="#">
+                                <h5 class="text-card">Pop</h5>
+                                <div class="img-card">
+                                    <img src="img/metal_lifting.jpg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-blue">
+                            <a href="#">
+                                <h5 class="text-card">Blues</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-red">
+                            <a href="#">
+                                <h5 class="text-card">Podcast</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-yellow">
+                            <a href="#">
+                                <h5 class="text-card">Podcast</h5>
+                                <div class="img-card">
+                                    <img src="img/player_left.jpg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-purple">
+                            <a href="#">
+                                <h5 class="text-card">Daily Mix</h5>
+                                <div class="img-card">
+                                    <img src="img/sinister.jpeg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-pink">
+                            <a href="#">
+                                <h5 class="text-card">Pop</h5>
+                                <div class="img-card">
+                                    <img src="img/metal_lifting.jpg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-blue">
+                            <a href="#">
+                                <h5 class="text-card">Blues</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-pink">
+                            <a href="#">
+                                <h5 class="text-card">Pop</h5>
+                                <div class="img-card">
+                                    <img src="img/metal_lifting.jpg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-blue">
+                            <a href="#">
+                                <h5 class="text-card">Blues</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-red">
+                            <a href="#">
+                                <h5 class="text-card">Podcast</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-pink">
+                            <a href="#">
+                                <h5 class="text-card">Pop</h5>
+                                <div class="img-card">
+                                    <img src="img/metal_lifting.jpg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-blue">
+                            <a href="#">
+                                <h5 class="text-card">Blues</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-red">
+                            <a href="#">
+                                <h5 class="text-card">Podcast</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-yellow">
+                            <a href="#">
+                                <h5 class="text-card">Podcast</h5>
+                                <div class="img-card">
+                                    <img src="img/player_left.jpg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-purple">
+                            <a href="#">
+                                <h5 class="text-card">Daily Mix</h5>
+                                <div class="img-card">
+                                    <img src="img/sinister.jpeg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-pink">
+                            <a href="#">
+                                <h5 class="text-card">Pop</h5>
+                                <div class="img-card">
+                                    <img src="img/metal_lifting.jpg" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card bgc-blue">
+                            <a href="#">
+                                <h5 class="text-card">Blues</h5>
+                                <div class="img-card">
+                                    <img src="img/mood-1.png" alt="cover-art metal">
+                                </div>
+                            </a>
+                        </div>
+                       
                     </div>
                 </section>
-                <section id="created" class="mt-80">
-                    <h2 class="mb-20">
-                        Creata per Bojack Horseman
-                    </h2>
-                    <p class="subtitle mb-30">
-                        Più ascolti, più accurati saranno i suggerimenti.
-                    </p>
-                    <div class="card-wrapper">
-                        <!-- card 1 -->
-                        <div class="card">
-                            <a href="#">
-                                <div class="img-card">
-                                    <img src="img/radar.jpeg" alt="cover-art metal">
-                                    <i class="play fa-regular fa-circle-play"></i>
-                                </div>
-                                <div class="text-card">
-                                    <h5>Release Radar</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- card 2 -->
-                        <div class="card">
-                            <a href="#">
-                            <div class="img-card">
-                                <img src="img/mixdaily.jpeg" alt="cover-art metal">
-                                <i class="play fa-regular fa-circle-play"></i>
-                            </div>
-                            <div class="text-card">
-                                <h5>Daily Mix 1</h5>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <section id="popular-artist" class="mt-80">
-                    <h2 class="mb-20">
-                        Artisti più popolari
-                    </h2>
-                    <p class="subtitle mb-30">
-                        Più ascolti, più accurati saranno i suggerimenti.
-                    </p>
-                    <div class="card-wrapper">
-                        <!-- card 1 -->
-                        <div class="card">
-                            <a href="#">
-                                <div class="img-card">
-                                    <img src="img/einaudi.jpeg" alt="cover-art metal">
-                                    <i class="play fa-regular fa-circle-play"></i>
-                                </div>
-                                <div class="text-card">
-                                    <h5>Einaudi</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <!-- card 2 -->
-                        <div class="card">
-                            <a href="#">
-                                <div class="img-card">
-                                    <img src="img/youg.jpeg" alt="cover-art metal">
-                                    <i class="play fa-regular fa-circle-play"></i>
-                                </div>
-                                <div class="text-card">
-                                    <h5>Lana Del Rey</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </section>
+                
     </main>
     <!--PLAYBAR -->
     <div class="playbar">
