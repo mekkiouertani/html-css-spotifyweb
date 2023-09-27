@@ -10,6 +10,21 @@
 	--color-light-grey: #c1c1c1;
 	--color-highlight: #adff2f;
 }
+  /* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; }
 
 * {
     margin:0;
@@ -135,7 +150,11 @@ main{
 .box-logo{
     width: 150px;
 }
-
+.sidebar .main-icon li:first-child{
+    margin-left: -20px;
+    padding-left: 20px;
+    border-left: 2px solid var(--color-highlight);
+}
 .sidebar li, .sidebar-small li{
     padding: 10px 0px;
 }
@@ -174,6 +193,10 @@ main{
 .pb-icon *{
     margin-right: 10px;
 }
+
+.playlist-scrollbar{
+    overflow-y: scroll;
+}
 /********** discovery **********/
 .discovery ul{
     display: flex;
@@ -196,6 +219,9 @@ main{
 }
 
 .card{
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: rgba(60, 60, 60, 0.2);
     width: calc(100% / 6 - 20px);
 }
 
@@ -220,6 +246,14 @@ main{
     left: 35%;
     font-size: 3em;
     display: none;
+}
+
+/* .card:hover #play{
+    display: inline-block;
+} */
+
+.card:hover{
+    background-color: rgba(100, 100, 100, 0.3);
 }
 
 /********** SECTION created **********/
