@@ -171,13 +171,23 @@ main{
     margin-right: 5px;
 
 }
-#search{
+.search{
     background-color: black;
     border: 0px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     padding: 10px 0px;
     color: white;
+}
+#search2{
+    position: absolute;
+    border: 0px;
+    margin-left: 9px;
+    display: none;
+}
+
+#lente:hover + input[type=text]{
+    display: inline-block;
 }
 
 .top-sidebar input[type=text] {
@@ -719,6 +729,20 @@ input[type="range"]:hover {
     }
     .pb-right-wrapper .fa-regular.fa-heart{
         display: inline;
+    }
+
+    .pb-left  {
+        width: 30%;
+    }
+    .pb-right{
+        width: 20%;
+    }
+    .pb-middle{
+        width: 50%;
+    }
+
+    .pb-middle .icon-top{
+        transform: scale(0.9);
     }
 
  }
