@@ -520,6 +520,8 @@ input[type="range"]:hover {
 
 #mood .card h5{
     padding-bottom: 100%;
+    padding-left: 8px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 #mood .card:hover{
@@ -553,26 +555,26 @@ input[type="range"]:hover {
     width: 40px;
     position: relative;
     bottom: 90%;
-    display: none;
+    right:45px;
+    transition: right 2s ease;
 }
 
 #mood .card:hover #logo-mood{
-    transition: 2s;
-    display: inline;
+   right: -3%;
 }
 /* utility background per carte pagina MOOD */
  .bgc-red{
-    background-color: red;
+    background-color: #EB1E66;
  }
 
  .bgc-blue{
-    background-color: blue;
+    background-color: #07AADB;
  }
  .bgc-purple{
-    background-color: purple;
+    background-color: #4705F2;
  }
  .bgc-yellow{
-    background-color: rgb(161, 161, 0);
+    background-color: #E8DA05;
  }
  .bgc-pink{
     background-color: pink;
@@ -633,6 +635,9 @@ input[type="range"]:hover {
 @media screen and (max-width: 1400px){
     #mood .card h5{
         font-size: 1em;
+    }
+    #logo-mood{
+        transform: scale(0.8);
     }
 }
  @media screen and (max-width: 1200px) {
