@@ -382,6 +382,10 @@ main{
 .pb-icon .fa-regular.fa-heart:hover{
     color: var(--color-highlight);
 }
+
+.pb-left h6:hover{
+    text-decoration: underline;
+}
 /****** pb-middle******/
 
 .icon-top{
@@ -392,6 +396,15 @@ main{
 .icon-top i{
     font-size: 1.2em;
     padding: 5px 10px;    
+    color: var(--color-light-grey);
+}
+
+.icon-top i:hover{
+    color: white;
+}
+
+.icon-top i:nth-child(3):hover{
+    color: var(--color-highlight);
 }
 .fa-regular.fa-circle-play{
     font-size: 1.7em;
@@ -421,6 +434,9 @@ main{
 input[type="range"] {
     accent-color: white;
     vertical-align: middle;
+  }
+input[type="range"]:hover {
+    accent-color: var(--color-highlight);
   }
 
 .pb-right-wrapper{
