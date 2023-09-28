@@ -558,6 +558,22 @@ input[type="range"]:hover {
     }  */
 } 
 
+@media screen and (max-height: 650px){
+    .playlist-scrollbar{
+        max-height: 10vh;
+    }
+
+    .sidebar h5, .icon-playlist, .playlist-scrollbar{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-height: 470px){
+    .sidebar h5, .icon-playlist, .playlist-scrollbar{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1400px){
     #mood .card h5{
         font-size: 1em;
