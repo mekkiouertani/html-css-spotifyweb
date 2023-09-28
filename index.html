@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +12,14 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify</title>
 </head>
-
 <body>
 <div class="mega-wrapper">
     <main>
-        <!-- sidebar -->
+        <!------
+                SIDEBAR
+                        ----------->
         <div class="sidebar">
+            <!-- top-sidebar -->
             <div class="top-sidebar">
                 <div class="box-logo">
                     <img src="img/logo.svg" alt="logo">
@@ -43,6 +44,7 @@
                         </a>
                     </li>
                 </ul>
+                <!-- middle-sidebar -->
                 <h5 class="mt-30">PLAYLIST</h5>
                 <a href="#" class="icon-playlist">
                     <i class="fa-solid fa-plus mt-20 mb-10"></i>
@@ -156,6 +158,7 @@
                     </li>
                 </ul>
             </div>
+            <!-- bottom-sidebar -->
             <div class="bottom-sidebar">
                 <p>
                     <a href="#">
@@ -215,6 +218,10 @@
                 </p>
             </div>
         </div>
+
+        <!------
+                SEZIONE CONTENITORE PRINCIPALE 
+                        ----------->
         <section class="wrapper">
             <!-- call to action -->
             <div class="call-to-action">
@@ -222,8 +229,8 @@
                     EFFETTUA L'UPGRADE
                 </a>
             </div>
-
             <div class="discovery">
+                 <!-- NAVBAR-->
                 <ul class="menu">
                     <li>
                         <a href="#">
@@ -256,6 +263,7 @@
                         </a>
                     </li>
                 </ul>
+                <!-- SEZIONE 1-->
                 <section id="recently">
                     <h2 class="mb-20">
                         Ascolti Recenti
@@ -341,6 +349,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- SEZIONE 2-->
                 <section id="created" class="mt-80">
                     <h2 class="mb-20">
                         Creata per Bojack Horseman
@@ -375,6 +384,7 @@
                         </div>
                     </div>
                 </section>
+                <!-- SEZIONE 3-->
                 <section id="popular-artist" class="mt-80">
                     <h2 class="mb-20">
                         Artisti più popolari
@@ -412,8 +422,11 @@
             </div>
         </section>
     </main>
-    <!--PLAYBAR -->
+    <!------
+                PLAYBAR
+                        ----------->
     <div class="playbar">
+        <!-- playbar-left-->
         <div class="pb-left">
             <div class="box-image">
                 <img src="img/sinister.jpeg" alt="cover-art sinister">
@@ -439,6 +452,8 @@
                 </a>
             </div>
         </div>
+        
+        <!-- playbar-middle-->
         <div class="pb-middle">
             <div class="icon-top">
                 <a href="#">
@@ -460,11 +475,12 @@
             </div>
             <div class="bar-time">
                 <span>0:25</span>
-                <!-- <span class="barra"></span> -->
                 <input type="range" class="barra">
                 <span>4:35</span>
             </div>
         </div>
+
+        <!-- playbar-right-->
         <div class="pb-right">
             <div class="pb-right-wrapper">
                 <a href="#">

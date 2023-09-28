@@ -35,7 +35,7 @@
 .debug {
     border: 1px solid red;
 }
-
+  /* margin and padding */
 .mt-10{
     margin-top: 10;
 }
@@ -72,6 +72,7 @@
 .flex{
     display: flex;
 }
+/* general utilities */
 a{
     text-decoration: none;
     color: white;
@@ -111,7 +112,11 @@ main{
     width: calc(100% - 250px);
     overflow-y: auto;
 }
-/****** call to action ******/
+
+
+/********************
+    call-to-action 
+            ***************/
 .call-to-action{
     position: fixed;
     z-index: 900;
@@ -140,6 +145,8 @@ main{
     padding: 20px;
     margin-top: 100px;
 }
+
+
 /********************
     sidebar 
             ***************/
@@ -217,6 +224,8 @@ main{
     margin-right: 10px;
 }
 
+
+/* playlisti sidebar */
 .playlist-scrollbar{
     max-height: 40vh;
     overflow-y: scroll;
@@ -245,6 +254,8 @@ main{
 /*************************************************
    DISCOVERY
  *************************************************/
+
+ /* navbar */
 .discovery ul, .discovery-fixed{
     display: flex;
     flex-wrap: wrap;
@@ -257,7 +268,7 @@ main{
     border-bottom: 1px solid var(--color-highlight);
 }
 
-.discovery-fixed{
+.discovery-fixed{ /* prova navbar fixed */
     display: none;
 }
 
@@ -458,12 +469,11 @@ input[type="range"]:hover {
 
 
 /*************************************************
-   MOOD
+   MOOD PAGINA GENERI E MOOD
  *************************************************/
 
  #mood .text-card{
     text-align: left;
-
  }
 
  #mood .card{
@@ -475,7 +485,6 @@ input[type="range"]:hover {
     padding: 0 5px;
  }
 
-
  #mood .img-card{
     width: 70%;
     height: 50%;
@@ -484,15 +493,12 @@ input[type="range"]:hover {
     bottom: 0;
     right: 0;
     box-shadow: 5px 10px 18px #030303;
-   
  }
 
 
 #mood .card:hover{
     box-shadow: inset 40px 40px 68px #030303;
     background-color: var(--color-highlight);
-/*     background-color: rgba(206, 206, 206, 0.2);
- */
 }
 
 #mood .card:hover h5{
@@ -506,9 +512,7 @@ input[type="range"]:hover {
 #mood .discovery ul li:nth-child(4){
     border-bottom: 1px solid var(--color-highlight);
 }
-
-
-
+/* utility background per carte pagina MOOD */
  .bgc-red{
     background-color: red;
  }
@@ -530,9 +534,6 @@ input[type="range"]:hover {
  }
 
 
-
-
-
 /*************************************************
    MEDIA QUERY
  *************************************************/
@@ -548,7 +549,7 @@ input[type="range"]:hover {
     div .discovery{
         margin-top: 5px;      
     } 
-
+/* PROVA NAV IN POSITION FIXED */
        /* .discovery .menu{
         position: fixed;
         z-index: 1000;
@@ -601,10 +602,7 @@ input[type="range"]:hover {
 
     #mood .card{
         width: calc(100% / 6 - 20px);
-
     }
-
-
  }
 
  @media screen and (max-width: 992px) {
@@ -613,14 +611,13 @@ input[type="range"]:hover {
     }
     #mood .card{
         width: calc(100% / 4 - 20px);
-
     }
     .discovery ul{
         font-size: 0.8em;
         text-align: center;
     }
 
-    .pb-left, .pb-right, {
+    .pb-left, .pb-right {
         width: 25%;
     }
 
@@ -642,15 +639,10 @@ input[type="range"]:hover {
     }
     #mood .card{
         width: calc(100% / 3 - 20px);
-
     }
 
     .pb-right-wrapper i:first-child{
         display: none;
-    }
-    
-    .play.fa-regular.fa-circle-play{
-        font-size:
     }
  }
 
@@ -668,11 +660,9 @@ input[type="range"]:hover {
         justify-content: space-between;
         align-items: center;
         align-content: center;
-
     }
     .sidebar-small .box-logo{
         width: 40px;
-        
     }
     .wrapper, .call-to-action{
         width:calc(100% - 50px)
@@ -680,7 +670,6 @@ input[type="range"]:hover {
     .sidebar-small i, .sidebar-small .bottom-sidebar i{
         font-size: 2.1em;
         margin-left: 2px;
-        
     }
 
     .discovery ul{
@@ -696,7 +685,6 @@ input[type="range"]:hover {
         border-radius: 50%;
         text-align: center;
         margin-left: 4px;
-    
     }
     .profile-image{
         margin-top: 10px;
