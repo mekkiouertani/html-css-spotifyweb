@@ -777,6 +777,70 @@ input[type="range"]:hover {
 
  }
 
+ @media screen and (max-width: 490px){
+    /* .pb-icon i{
+        transform: scale(0.7);
+    } */
+    
+
+    .playbar .song-info{
+        display: none;
+    }
+   
+    .pb-left  {
+        width: 10%;
+    }
+    .pb-right{
+        width: 20%;
+    }
+    .pb-middle{
+        width: 70%;
+    }
+
+ }
+
+ @media screen and (max-width: 400px){
+      .pb-icon i{
+        transform: scale(0.6);
+      }
+
+      .pb-left  {
+        width: 10%;
+    }
+    .pb-right{
+        width: 10%;
+    }
+    .pb-middle{
+        width: 80%;
+    }
+
+    .pb-right .fa-regular.fa-heart{
+        display: none;
+    }
+
+    .pb-right-wrapper{
+        right: -10px;
+    }
+    .pb-right-wrapper .fa-solid.fa-volume-high{
+        position: relative;
+        left: 10px;
+    }
+    #last-volume{
+        vertical-align: top;
+        position: relative;
+        left: 20px;
+        bottom: 15px;
+        display: block;
+    }
+
+    #mood .card h5{
+        font-size: 0.7em;
+    }
+
+    #logo-mood{
+        transform: scale(0.5);
+    }
+ }
  
 
  
