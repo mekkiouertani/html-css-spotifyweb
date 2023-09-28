@@ -518,22 +518,47 @@ input[type="range"]:hover {
     box-shadow: 5px 10px 18px #030303;
  }
 
+#mood .card h5{
+    padding-bottom: 100%;
+}
 
 #mood .card:hover{
     box-shadow: inset 40px 40px 68px #030303;
-    background-color: var(--color-highlight);
+    background-color:#1dd05d;
+    transition: 2s;
 }
 
-#mood .card:hover h5{
-    font-size: 1.5em;
+
+#mood .card:hover .img-card{
+    animation: ruota 5s infinite;
 }
 
+@keyframes ruota{
+    from {
+        transform: rotate(-360deg);
+    } 
+    to{
+        transform: rotate(0);
+    }
+}
 #mood .discovery ul li:first-child{
     border-bottom: 0px solid var(--color-highlight);
 }
 
 #mood .discovery ul li:nth-child(4){
     border-bottom: 1px solid var(--color-highlight);
+}
+
+#logo-mood{
+    width: 40px;
+    position: relative;
+    bottom: 90%;
+    display: none;
+}
+
+#mood .card:hover #logo-mood{
+    transition: 2s;
+    display: inline;
 }
 /* utility background per carte pagina MOOD */
  .bgc-red{
