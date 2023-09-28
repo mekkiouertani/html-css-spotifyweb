@@ -403,9 +403,10 @@ main{
     color: white;
 }
 
-.icon-top i:nth-child(3):hover{
-    color: var(--color-highlight);
-}
+.icon-top i:hover{
+    transform: scale(1.1);
+/*     color: var(--color-highlight);
+ */}
 .fa-regular.fa-circle-play{
     font-size: 1.7em;
 }
@@ -448,6 +449,12 @@ input[type="range"]:hover {
     padding: 0 5px;
 }
 
+.pb-right-wrapper .fa-regular.fa-heart{
+    display: none;
+}
+.pb-right-wrapper .fa-regular.fa-heart:hover{
+    color: var(--color-highlight);
+}
 
 
 /*************************************************
@@ -613,16 +620,20 @@ input[type="range"]:hover {
         text-align: center;
     }
 
-    .pb-left, .pb-right, .pb-middle{
-        width: 100%;
+    .pb-left, .pb-right, {
+        width: 25%;
+    }
+
+    .pb-middle{
+        width: 50%;
     }
     .song-info{
         width: 100%;
     }
 
-    /* .play.fa-regular.fa-circle-play{
-        font-size: 4em;
-    } */
+    .pb-icon a:last-child{
+        display: none;
+    }
  }
 
  @media screen and (max-width: 768px) {
@@ -633,16 +644,10 @@ input[type="range"]:hover {
         width: calc(100% / 3 - 20px);
 
     }
-    .pb-right{
-        width: 20%;
-    }
-    .pb-left{
-        width: 30%;
-    }
-    .pb-middle{
-        width: 50%;
-    }
 
+    .pb-right-wrapper i:first-child{
+        display: none;
+    }
     
     .play.fa-regular.fa-circle-play{
         font-size:
@@ -699,7 +704,21 @@ input[type="range"]:hover {
         margin-bottom: 5px;
     }
  
- 
+    .pb-right-wrapper input[type="range"]{
+        transform: rotate(-90deg);
+    }
+
+    .pb-right .barra{
+        max-width: 50px;
+        margin-left: -10px;
+    }
+
+    .pb-icon .fa-regular.fa-heart{
+        display: none;
+    }
+    .pb-right-wrapper .fa-regular.fa-heart{
+        display: inline;
+    }
 
  }
 
